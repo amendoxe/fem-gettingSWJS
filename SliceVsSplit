@@ -1,0 +1,6 @@
+let name = "Jimmy"
+console.log(name);
+console.log(name.length);
+console.log(name.slice(1,4));
+console.log(name.split(""));
+

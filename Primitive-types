@@ -1,0 +1,4 @@
+var b 
+b = true
+b = {}
+b= Symbol();
