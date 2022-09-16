@@ -1,0 +1,21 @@
+class workshop {
+  constructor(teacher){
+    this.teacher = teacher;
+  }
+  ask(question){
+    console.log(this.teacher,question);
+  }
+  someMath(x,y){
+	console.log(x+y);
+    console.log(`By the way the constructor name is ${this.teacher}`)
+  }
+}
+var deepJS = new workshop("Kyle");
+var anotherJsAgent = new workshop("Jaimico");
+var juanelo = new workshop("Juanelo")
+
+deepJS.ask("What is all this?")
+anotherJsAgent.ask("Is this it?")
+anotherJsAgent.someMath(10,20)
+juanelo.ask("Pero que decís?")
+juanelo.someMath(25,2)

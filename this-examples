@@ -15,6 +15,9 @@ function otherClass(){
   ask.call(myContext, "Why?");
   ask.call(myContext2, "NANY?")
   ask.call(myContext3, "DO IT!")
+  myContext.teacher+= 2
+  ask.call(myContext, "Why?");
+  
 }
 
 otherClass()
