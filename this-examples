@@ -1,3 +1,5 @@
+const teacher = "Random Teacher"
+console.log(teacher)
 function ask(question){
   console.log(this.teacher, question)
 }
@@ -8,8 +10,8 @@ function otherClass(){
   var myContext2= {
     teacher:"Jimmy"
   }
-  var myContext3= "Jimmy"
-  
+  var myContext3= {teacher: "Jimmy"
+                  }
   ask.call(myContext, "Why?");
   ask.call(myContext2, "NANY?")
   ask.call(myContext3, "DO IT!")
