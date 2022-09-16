@@ -1,0 +1,26 @@
+function ask(question){
+  console.log(this.teacher, question)
+}
+function otherClass(){
+  var myContext= {
+    teacher:"Suzy"
+  };
+  var myContext2= {
+    teacher:"Jimmy"
+  }
+  var myContext3= "Jimmy"
+  
+  ask.call(myContext, "Why?");
+  ask.call(myContext2, "NANY?")
+  ask.call(myContext3, "DO IT!")
+}
+
+otherClass()
+
+var workshop ={
+  teacher: "Kyle",
+  ask(question){
+    console.log(this.teacher, question);
+  }
+}
+workshop.ask("Is this it?")
