@@ -1,0 +1,16 @@
+let arreglo = ["uno", "dos", "tres", "cuatro", "cinco"]
+ for(let i = 0 ; i < arreglo.length ; i++){
+   console.log(arreglo[i]);
+ }
+
+console.log("---------------------forEach----------")
+
+arreglo.forEach(element=>console.log(element))
+
+
+
+arreglo
+for(arre of arreglo){
+  console.log(arre)
+}
+
